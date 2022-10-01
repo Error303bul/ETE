@@ -1,0 +1,19 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>ETD</title>
+		<script src="./decode.js" defer></script>
+		<script src="./script.js" defer></script>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<input type="file" id="file" style="display:none;"/>
+		<button onclick="file.click()">Import file</button><br><br><button id="clear">Clear</button>
+		<br><br>
+		<textarea id="textarea"></textarea>
+		<br><br><br>
+		<div id="checkboxvalue">Decode</div><input id="checkbox" type="checkbox" checked/><br>
+		<button id="copytext">Copy</button><br><br>
+		<div id="output"></div>
+	</body>
+</html>

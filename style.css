@@ -1,0 +1,13 @@
+textarea {
+ resize: vertical;
+  width: 100%;
+  height: 200px;
+}
+
+#output{
+  overflow-y:auto;
+  overflow-x: hidden;
+  height:250px; 
+  background-color:#b5b5b5;
+  resize: vertical;
+}
