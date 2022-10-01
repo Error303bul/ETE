@@ -5,7 +5,7 @@ const checkbox=document.getElementById("checkboxvalue")
 const files=document.getElementById("file")
 const reader = new FileReader();
 
-const step=2
+var step=2
 
 const tick=setInterval(update, 20)
 
