@@ -5,13 +5,15 @@ const checkbox=document.getElementById("checkboxvalue")
 const files=document.getElementById("file")
 const reader = new FileReader();
 
+const step=2
+
 const tick=setInterval(update, 20)
 
 function update(){
 	if(switcher.checked){
 		checkbox.innerHTML="Decode"
 		try{
-			let value=powerDecode(textarea.value,3)
+			let value=powerDecode(textarea.value,step)
 			if(output.innerHTML!=value){
 				output.innerHTML=value
 			}
@@ -21,7 +23,7 @@ function update(){
 	}else{
 		checkbox.innerHTML="Encode"
 		try{
-		let value=powerEncode(textarea.value,3)
+		let value=powerEncode(textarea.value,step)
 			if(output.innerHTML!=value){
 				output.innerHTML=value
 			}
